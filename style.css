@@ -13,6 +13,21 @@ a {
   display: inline;
 }
 
+p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+h1 {
+  font-size: 32px;
+  color: #1a202c;
+  line-height: 1.25;
+}
+
+img {
+    width: 100%;
+}
+
 body {
   max-width: 100vw;
   overflow-x: hidden;
@@ -44,6 +59,10 @@ section {
 
 main {
   margin-bottom: 96px;
+}
+
+button {
+  cursor: pointer;
 }
 
 /* 
@@ -140,6 +159,11 @@ nav {
   height: 0;
 }
 
+.nav__link--primary:hover {
+  background-color: #5011cc;
+  color: #fff;
+}
+
 .btn__menu {
   display: none;
   background: transparent;
@@ -220,6 +244,92 @@ header .row {
   justify-content: space-between;
 }
 
+.header__title {
+  width: 40%;
+}
+
+.header__img--wrapper {
+  width: calc(100%-40%);
+}
+
+.header__para {
+  width: 80%;
+  margin: 32px 0;
+}
+
+.header__email {
+  display: flex;
+  width: 65%;
+  max-width: 448%;
+  height: 69px;
+  position: relative;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.header__email--input {
+  width: 100%;
+  border-radius: 400px;
+  font-size: 18px;
+  border: 2px solid #e5e7eb;
+  color: #243e63;
+  font-weight: 500;
+  position: absolute;
+  padding: 20px 192px 20px 32px;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+  transition: border-color-300ms;
+}
+
+.header__email--input:hover {
+    border-color: #a0aec0;
+}
+
+.header__email--input:focus,
+.header__email--input:active {
+    outline: none;
+    border-color: #6415ff;
+}
+
+
+.header__customers {
+    margin-top: 16px;
+    padding-right: 128px;
+    opacity: 0.5;
+}
+
+.header__email--btn:hover {
+    background-color: #3c0d99
+}
+
+.header__email--btn {
+  z-index: 2;
+  margin: 8px;
+  height: calc(100% - 16px);
+  border-radius: 500px;
+  width: 160px;
+  border: none;
+  background-color: #6415ff;
+  color: #fff;
+  font-weight: 700;
+  font-size: 16px;
+  transition: all 300ms;
+}
+
+.header__customer--title {
+  margin: 8px;
+  color: #a0aec0;
+  font-size: 12px;
+  font-weight: 700;
+  margin-top: 80px;
+  letter-spacing: 0.6;
+}
+
+.header__img {
+  width: 100%;
+  max-width: 768px;
+}
 /* 
 
 FEATURES ↓
