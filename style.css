@@ -422,6 +422,19 @@ QUALITY WORK ↓
 .container {
   padding: 96px 0;
 }
+.btn {
+  z-index: 2;
+  margin: 8px;
+  height: 50px;
+  border-radius: 500px;
+  width: 150px;
+  border: none;
+  background-color: #6415ff;
+  color: #fff;
+  font-weight: 700;
+  font-size: 14px;
+  transition: all 300ms;
+}
 
 #quality .row {
   display: flex;
@@ -435,15 +448,14 @@ QUALITY WORK ↓
   margin: 0 auto;
 }
 
-.section__description {
-  width: 50%;
+#quality .section__title {
+  margin-bottom: 16px;
 }
 
 .quality__description {
   max-width: 576px;
   margin-right: 64px;
   font-weight: 700;
-  text-align: right;
 }
 
 .quality__para {
