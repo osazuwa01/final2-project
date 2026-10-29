@@ -449,8 +449,7 @@ QUALITY WORK ↓
 }
 
 #quality .section__title {
-  width: 60%;
-  font-size: 500px;
+  width: 100%;
   font-size: 32px;
   margin-top: 8px;
 }
@@ -465,26 +464,21 @@ QUALITY WORK ↓
   color: #7c8ba1;
   font-weight: 500;
   max-width: 36rem
-  width: 80%;
-  margin: 32px 0;
+  margin 32px 0;
+}
+
+.quality__img img {
+  width: 100%;
+  height: auto;
 }
 
 .quality__img {
-  position: absolute;
+  position: relative;
   right: 0px;
   bottom: 0px;
   fill: rgb(100, 21, 255);
   opacity: 1;
   z-index: 0;
-}
-
-.quality__img {
-  border-radius: 4px;
-  border: 1px solid rgb(229, 231, 235);
-  position: relative;
-  margin: 0 56px;
-  z-index: 2;
-  display: flex;
 }
 
 /* 
