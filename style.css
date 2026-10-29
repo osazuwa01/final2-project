@@ -419,10 +419,25 @@ QUALITY WORK ↓
 
 */
 
+.container {
+  padding: 96px 0;
+}
+
 #quality .row {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.row {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.quality__title {
+  color: #6415ff
+  font-weight: 700;
 }
 
 /* 
