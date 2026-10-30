@@ -457,6 +457,7 @@ QUALITY WORK ↓
 
 .quality__description {
   flex: 1;
+  font-weight: 600;
   min-width: 0;
 }
 
