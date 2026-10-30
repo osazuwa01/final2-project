@@ -484,10 +484,34 @@ STEPS ↓
 
 */
 
+.steps__description, .steps__img--wrapper {
+  width: 50%;
+  position: relative;
+}
+
 #steps .row {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.steps__img--wrapper {
+  max-width: 50%;
+    height: auto;
+}
+
+.steps__heading {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+
+.step-wrapper {
+  display: flex;
+  gap: 24px;
+  padding: 20px;
+  border: 1px solid #ddd;
 }
 
 /* 
