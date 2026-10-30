@@ -438,8 +438,9 @@ QUALITY WORK ↓
 
 #quality .row {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
+  gap: 48px;
 }
 
 .row {
@@ -455,16 +456,15 @@ QUALITY WORK ↓
 }
 
 .quality__description {
-  max-width: 576px;
-  margin-right: 64px;
-  font-weight: 700;
+  flex: 1;
+  min-width: 0;
 }
 
 .quality__para {
   color: #7c8ba1;
   font-weight: 500;
-  max-width: 36rem
-  margin 32px 0;
+  max-width: 36rem;
+  margin: 32px 0;
 }
 
 .quality__img img {
@@ -473,12 +473,8 @@ QUALITY WORK ↓
 }
 
 .quality__img {
-  position: relative;
-  right: 0px;
-  bottom: 0px;
-  fill: rgb(100, 21, 255);
-  opacity: 1;
-  z-index: 0;
+  flex: 1;
+  min-width: 0;
 }
 
 /* 
