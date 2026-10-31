@@ -8,6 +8,28 @@
   color: #243e63;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+blockquote,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+figure,
+p {
+  margin: 0px;
+}
+
 a {
   text-decoration: none;
   display: inline;
@@ -359,6 +381,7 @@ FEATURES ↓
   margin: 0 0 35px;
 }
 
+/* PARAGRAPHS */
 .section__para {
   margin-top: 1rem;
   max-width: 36rem;
@@ -392,6 +415,7 @@ FEATURES ↓
   border-radius: 500px;
 }
 
+/* IMAGE */
 .feature__img {
   width: 24px;
   height: 24px;
@@ -405,7 +429,7 @@ FEATURES ↓
 .feature__title {
   font-size: 24px;
 }
-
+/* PARAGRAPHS */
 .feature__para {
   margin-top: 16px;
   font-size: 16px;
@@ -460,7 +484,7 @@ QUALITY WORK ↓
   font-weight: 600;
   min-width: 0;
 }
-
+/* PARAGRAPHS */
 .quality__para {
   color: #7c8ba1;
   font-weight: 500;
@@ -468,6 +492,7 @@ QUALITY WORK ↓
   margin: 32px 0;
 }
 
+/* IMAGE */
 .quality__img img {
   width: 100%;
   height: auto;
@@ -484,34 +509,87 @@ STEPS ↓
 
 */
 
-.steps__description, .steps__img--wrapper {
-  width: 50%;
-  position: relative;
-}
+/* STEPS SECTION */
 
 #steps .row {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 60px;
 }
 
+/* IMAGE */
 .steps__img--wrapper {
-  max-width: 50%;
-    height: auto;
+  width: 50%;
+  flex: 1;
 }
 
+.steps__img--wrapper img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* RIGHT CONTENT */
+.steps__description {
+  width: 50%;
+  flex: 1;
+}
+
+/* STEPS LABEL */
 .steps__heading {
-  display: flex;
-  align-items: center;
-  gap: 40px;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  margin-bottom: 20px;
 }
 
+/* MAIN HEADING */
+.steps__header {
+  font-size: 46px;
+  font-weight: 900;
+  line-height: 1.15;
+  text-align: left;
+  margin-bottom: 38px;
+}
 
-.step-wrapper {
+/* EACH STEP */
+.steps__wrapper {
   display: flex;
-  gap: 24px;
-  padding: 20px;
-  border: 1px solid #ddd;
+  align-items: flex-start;
+  gap: 26px;
+  margin-bottom: 28px;
+}
+
+/* NUMBERS */
+.step__list {
+  font-size: 44px;
+  font-weight: 700;
+  color: #cbd5e0;
+  line-height: 1;
+  padding: 0;
+}
+
+/* STEP CONTENT */
+.steps__content {
+  flex: 1;
+}
+
+/* STEP TITLES */
+.step__menu {
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 1.2;
+  text-align: left;
+  margin-bottom: 12px;
+}
+
+/* PARAGRAPHS */
+.step__para {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.6;
+  color: #7c8ba1;
 }
 
 /* 
