@@ -681,6 +681,17 @@ MOBILE RESPONSIVENESS ↓
   footer {
     padding: 80px 32px;
   }
+  #steps__img--wrapper,
+  #steps__description {
+    flex: none;
+    width: 100%;
+    max-width: 448px;
+  }
+  #steps__wrapper #step__menu {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 }
 
 @media (max-width: 768px) {
