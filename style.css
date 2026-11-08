@@ -468,6 +468,8 @@ QUALITY WORK ↓
   gap: 48px;
 }
 
+.quality__grid
+
 .row {
   width: 100%;
   max-width: 1280px;
@@ -692,6 +694,10 @@ MOBILE RESPONSIVENESS ↓
     align-items: center;
     text-align: center;
   }
+  #steps .step__para {
+    text-align: center;
+    font-size: 16px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -738,5 +744,30 @@ MOBILE RESPONSIVENESS ↓
   .feature__text {
     margin-left: 0;
     margin-top: 16px;
+  }
+  #steps .steps__wrapper {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 12px;
+  }
+  
+  #steps .step__list {
+    font-size: 36px;
+    margin-bottom: 0;
+  }
+  
+  #steps .steps__content {
+    width: 100%;
+  }
+  
+  #steps .step__menu {
+    text-align: center;
+    font-size: 22px;
+  }
+  
+  #steps .step__para {
+    text-align: center;
+    font-size: 16px;
   }
 }
