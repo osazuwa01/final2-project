@@ -384,6 +384,7 @@ FEATURES ↓
 }
 
 /* PARAGRAPHS */
+
 .section__para {
   margin-top: 1rem;
   max-width: 36rem;
@@ -545,16 +546,27 @@ STEPS ↓
 }
 
 /* IMAGE */
+
 .steps__img--wrapper {
   width: 50%;
   flex: 1;
+  position: relative;
 }
 
-.steps__img--wrapper img {
-  width: 100%;
-  height: auto;
+.steps__grid {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  left: 50%;
+  bottom: -40px;
+  transform: translateX(-50%);
+  fill: #e9d5ff;
+  color: #e9d5ff;
+  z-index: -1;
   display: block;
+  pointer-events: none;
 }
+
 
 /* RIGHT CONTENT */
 .steps__description {
