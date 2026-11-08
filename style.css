@@ -552,7 +552,6 @@ STEPS ↓
   flex: 1;
   position: relative;
 }
-
 .steps__grid {
   width: 80px;
   height: 80px;
@@ -566,7 +565,6 @@ STEPS ↓
   display: block;
   pointer-events: none;
 }
-
 
 /* RIGHT CONTENT */
 .steps__description {
@@ -636,10 +634,105 @@ VALUES ↓
 
 */
 
+.value:nth-child(1) .value__img--wrapper {
+  background-color: #9ae6b4;
+}
+
+
 #values .row {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.row {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.values__description, .values__img {
+  width: 50%;
+}
+
+.section__tag {
+  font-size: 16px;
+  color: #6415ff;
+  letter-spacing: 1.6px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+#values .section__title {
+  margin-top: 16px;
+  margin-bottom: 32px;
+}
+
+.value__para {
+  margin-top: 16px;
+  line-height: 1.625;
+  color: #718096;
+}
+
+
+.value__name {
+  margin-left: 12px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #243e63;
+}
+
+.value:nth-of-type(2) {
+  margin-top: 32px;
+}
+
+.value__para {
+  margin-top: 16px;
+  line-height: 1.625;
+  color: #718096;
+}
+
+.value__img {
+  width: 20px;
+  height: 20px;
+}
+
+.values__list {
+  margin-left: 0px;
+  margin-right: 0px;
+  display: flex;
+  max-width: none;
+  flex-direction: row;
+}
+
+.value:nth-of-type(1) {
+  margin-top: 32px;
+  margin-right: 32px;
+}
+
+.value__title {
+  display: flex;
+  align-items: center;
+}
+
+.value {
+  margin-top: 2rem;
+  margin-right: 2rem;
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+}
+
+.btn {
+  background-color: #6415ff;
+  padding: 12px 32px;
+  border: none;
+  border-radius: 500px;
+  font-size: 14px;
+  color: #fff;
+  font-weight: bold;
+  transition: all 300ms ease;
+  cursor: pointer;
 }
 
 /*
@@ -699,6 +792,11 @@ MOBILE RESPONSIVENESS ↓
   header .row {
     align-items: flex-end;
   }
+  .steps__grid {
+    height: 5rem;
+    width: 5rem;
+    bottom: -50px;
+}
 }
 
 @media (max-width: 1024px) {
@@ -731,6 +829,13 @@ MOBILE RESPONSIVENESS ↓
   }
   #steps .step__para {
     text-align: center;
+    font-size: 16px;
+  }
+  .values__list {
+    max-width: 20rem;
+    flex-direction: column;
+  }
+  .section__para {
     font-size: 16px;
   }
 }
